@@ -1,0 +1,7 @@
+import validaciones
+
+USUARIO_CORRECTO="admin"
+CLAVE_CORRECTA=1234
+INTENTOS_MAX=3
+
+print(validaciones.validar_acceso(USUARIO_CORRECTO,CLAVE_CORRECTA,INTENTOS_MAX))
