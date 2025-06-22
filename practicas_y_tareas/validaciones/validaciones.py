@@ -12,6 +12,13 @@ def validar_entero(mensaje:str)->int:
         num = input(mensaje)
     return int(num)
 
+def validar_dias(mensaje:str)->int:
+    num = input(mensaje)
+    while num.isnumeric() == False or int(num) > 7 or int(num) < 1: # or int(num) < 0:
+        print("el numero ingresado no es valido, intente nuevamente")
+        num = input(mensaje)
+    return int(num)
+
 def validar_entero_pos(mensaje:str)->int:
     num = input(mensaje)
     while num.isnumeric() == False or int(num) < 0:
